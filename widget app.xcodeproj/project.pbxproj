@@ -17,6 +17,9 @@
 		639C08E32AFB8342004B061A /* widgetextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C08E22AFB8342004B061A /* widgetextension.swift */; };
 		639C08E52AFB8344004B061A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639C08E42AFB8344004B061A /* Assets.xcassets */; };
 		639C08E92AFB8344004B061A /* widgetextensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 639C08D92AFB8342004B061A /* widgetextensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		639C08F12B023F08004B061A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C08F02B023F08004B061A /* DataService.swift */; };
+		639C08F22B023F08004B061A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C08F02B023F08004B061A /* DataService.swift */; };
+		639C08F42B024432004B061A /* LogEntryAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C08F32B024432004B061A /* LogEntryAppIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,10 @@
 		639C08E22AFB8342004B061A /* widgetextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetextension.swift; sourceTree = "<group>"; };
 		639C08E42AFB8344004B061A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639C08E62AFB8344004B061A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639C08EE2B023DE7004B061A /* widget app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "widget app.entitlements"; sourceTree = "<group>"; };
+		639C08EF2B023E1C004B061A /* widgetextensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widgetextensionExtension.entitlements; sourceTree = "<group>"; };
+		639C08F02B023F08004B061A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		639C08F32B024432004B061A /* LogEntryAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntryAppIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,8 @@
 		639C08BB2AFB7D4C004B061A = {
 			isa = PBXGroup;
 			children = (
+				639C08F32B024432004B061A /* LogEntryAppIntent.swift */,
+				639C08EF2B023E1C004B061A /* widgetextensionExtension.entitlements */,
 				639C08C62AFB7D4C004B061A /* widget app */,
 				639C08DF2AFB8342004B061A /* widgetextension */,
 				639C08DA2AFB8342004B061A /* Frameworks */,
@@ -100,6 +109,7 @@
 		639C08C62AFB7D4C004B061A /* widget app */ = {
 			isa = PBXGroup;
 			children = (
+				639C08EE2B023DE7004B061A /* widget app.entitlements */,
 				639C08C72AFB7D4C004B061A /* widget_appApp.swift */,
 				639C08C92AFB7D4C004B061A /* ContentView.swift */,
 				639C08CB2AFB7D4D004B061A /* Assets.xcassets */,
@@ -130,6 +140,7 @@
 			children = (
 				639C08E02AFB8342004B061A /* widgetextensionBundle.swift */,
 				639C08E22AFB8342004B061A /* widgetextension.swift */,
+				639C08F02B023F08004B061A /* DataService.swift */,
 				639C08E42AFB8344004B061A /* Assets.xcassets */,
 				639C08E62AFB8344004B061A /* Info.plist */,
 			);
@@ -237,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639C08F12B023F08004B061A /* DataService.swift in Sources */,
 				639C08CA2AFB7D4C004B061A /* ContentView.swift in Sources */,
 				639C08C82AFB7D4C004B061A /* widget_appApp.swift in Sources */,
 			);
@@ -246,6 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639C08F22B023F08004B061A /* DataService.swift in Sources */,
+				639C08F42B024432004B061A /* LogEntryAppIntent.swift in Sources */,
 				639C08E12AFB8342004B061A /* widgetextensionBundle.swift in Sources */,
 				639C08E32AFB8342004B061A /* widgetextension.swift in Sources */,
 			);
@@ -387,6 +401,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "widget app/widget app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"widget app/Preview Content\"";
@@ -417,6 +432,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "widget app/widget app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"widget app/Preview Content\"";
@@ -446,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widgetextensionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Y7P52GGAD;
@@ -473,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widgetextensionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Y7P52GGAD;
